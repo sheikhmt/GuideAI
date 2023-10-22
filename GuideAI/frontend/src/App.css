@@ -1,0 +1,102 @@
+body {
+  background-image: url('./assets/valley.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  margin: 0px;
+  font-family: 'Avenir', sans-serif;
+}
+
+.background {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to right, #e0f2f1, #b2ebf2, #80deea, #4dd0e1); /* Added gradient */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.guideai-logo {
+  font-size: 3em;
+  color: #007BFF;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.form-card {
+  width: 50%;
+  max-width: 350px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+  font-size: 2.5em;
+  color: #2C3E50;
+  padding-bottom: 20px;
+}
+
+.form-subtitle {
+  font-size: 1.1em;
+  color: #34495E;
+  padding-bottom: 30px;
+}
+
+.auth {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.auth-label {
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  font-size: 0.9em;
+  color: #999;
+}
+
+.auth-input {
+  background-color: #F7F7F7;
+  color: #333;
+  outline: none;
+  border: 1px solid #007BFF;
+  border-radius: 10px;
+  padding: 20px 15px;
+  width: 100%;
+  margin-bottom: 25px;
+  transition: border 0.3s ease;
+}
+
+.auth-input:focus {
+  border-color: #0056b3;
+}
+
+.auth-button {
+  width: 100%;
+  height: 60px;
+  color: white;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.auth-button:hover {
+  background-color: #0056b3;
+}
+
+.chat-wrapper {
+  height: 80vh;
+  width: 80%;
+  margin-left: 10%;
+  color: white;
+  background: #576877;
+}

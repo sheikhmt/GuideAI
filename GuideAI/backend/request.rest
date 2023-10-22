@@ -1,0 +1,17 @@
+POST http://localhost:3001/authenticate 
+## locahost:3001 is a port in our local machine we have to change the hosting & deploying later
+Content-Type: application/json
+
+{
+  "username": "adam",
+  "secret": "sha256..."
+}
+
+// OUR CODE BELOW
+
+//POST http://localhost:3001/authenticate
+
+//Content-type: application/json
+//{"username": "adam",
+//"secret": "pass1234"}
+
