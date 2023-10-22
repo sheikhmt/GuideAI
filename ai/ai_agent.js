@@ -34,7 +34,7 @@ class AIAgent
             model: MODEL_NAME, // required, which model to use to generate the result
             temperature: 0.35, // optional, 0.0 always uses the highest-probability result
             candidateCount: 1, // optional, how many candidate results to generate
-            top_k: 40, // optional, number of most probable tokens to consider for generation
+            top_k: 80, // optional, number of most probable tokens to consider for generation
             top_p: 0.95, // optional, for nucleus sampling decoding strategy
             max_output_tokens: 1024, // optional, maximum number of output tokens to generate
             stop_sequences: stopSequences, // optional, sequences at which to stop model generation
@@ -71,15 +71,3 @@ const prompt = require('prompt-sync')();
 var ai = new AIAgent();
 var input = prompt('Type message (type "exit" to quit): ');
 ai.inputMessage(input);
-// while (true)
-// {
-//     // Input
-//     var input = prompt('Type message (type "exit" to quit): ');
-//     if (input.includes('exit'))
-//     {
-//         break;
-//     }
-
-//     // Output
-//     var output = ai.inputMessage(input);
-// }
